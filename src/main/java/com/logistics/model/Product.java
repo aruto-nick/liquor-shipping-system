@@ -16,7 +16,18 @@ public class Product {
 	
 	public static void main (String[] args) {
 		Product p1 = new Product("ビール", 500, 10);
-		System.out.println(p1.name + p1.price +"円の残り在庫数は" + p1.stock);
+		System.out.println(p1.getName() + p1.getPrice() +"円の残り在庫数は" + p1.getStock());
+	}
+	
+	//getter
+	public String getName() {
+		return name;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public int getStock() {
+		return stock;
 	}
 
 }
