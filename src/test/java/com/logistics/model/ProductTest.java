@@ -26,5 +26,26 @@ public class ProductTest {
 		
 		assertEquals(10, p1.getStock());
 	}
+	
+	//Setterテストのためインスタンス生成
+	Product p2 = new Product ("ビール", 600, 15);
+	
+	@Test
+	void testSetName() {
+		p2.setName("日本酒");
+		assertEquals("日本酒", p2.getName());
+	}
+	
+	@Test
+	void testSetPrice() {
+		p2.setPrice(800);
+		assertEquals(800, p2.getPrice());
+	}
+	
+	@Test
+	void testSetStock() {
+		p2.setStock(30);
+		assertEquals(30, p2.getStock());
+	}
 
 }
